@@ -9,29 +9,41 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/97eed6eac3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="images/Logo.png" alt="logo"></a>
             </div>
-            <ul>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="exhibition.html">Exhibition</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="getinvolved.html">Get Involved</a></li>
-                <li><a href="book">Book</a></li>
-            </ul>
-            <div class="search">
-                <img src="images/icon_search.png">
+            <div class="menu">
+                <input type="checkbox" id="hamburger-menu" />
+                <div class="hamburger">
+                <label for=hamburger-menu><i class="fas fa-bars"></i></label>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="exhibition.html">Exhibition</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="visit.html">Visit</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
+                        <li><a href="book">Book</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <img src="images/icon_search.png">
+                </div>
             </div>
         </nav>
-        <header>
-            <div class="homepage-cover"></div>
+        <header class="home">
+            <div class="homepage-cover cover"></div>
+            <div class="cta-home">
+                <a href="#" class="cta">Read More</a>
+            </div>
         </header>
-        <main>
-            <section class="homepage-content">
+        <main class="grid-content">
+            <section class="grid-layout image-width">
                 <div>
                     <img src="images/home_explore.jpg" alt="Explore"/>
                     <h2>Explore</h2>
@@ -65,10 +77,10 @@
             </section>
         </main>
         <footer>
-            <div class="logo">
+            <div class="logo logo-footer">
                 <a href="index.html"><img src="images/Logo.png" alt="logo"></a>
             </div>
-            <div>
+            <div class="opening">
                 <h2>Opening Hours</h2>
                 <ul class="hours">
                     <li>Monday: Closed</li>
@@ -80,17 +92,17 @@
                     <li>Sunday: 09:00-13:00</li>
                 </ul>
             </div>
-            <div>
+            <div class="address">
                 <h2>Address</h2>
                 <p>Nedre Langgate 26,</p>
                 <p>5005, Bergen</p>
             </div>
-            <div>
+            <div class="contact-footer">
                 <h2>Contact</h2>
                 <p>Mail: info@communityscience.com</p>
                 <p>Phone: +4780808080</p>
             </div>
-            <div class="socialmedia">
+            <div class="socialmedia social">
                 <h2>Social Media</h2>
                 <a href="index.html"><img src="images/socialmedia.png" alt="social media"></a>
             </div>

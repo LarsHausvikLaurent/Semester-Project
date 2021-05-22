@@ -7,30 +7,57 @@
         <link href="css/stylesheet.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/97eed6eac3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="images/Logo.png" alt="logo"></a>
             </div>
-            <ul>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="exhibition.html">Exhibition</a></li>
-                <li><a href="events.html" class="active">Events</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="getinvolved.html">Get Involved</a></li>
-                <li><a href="book">Book</a></li>
-            </ul>
-            <div class="search">
-                <img src="images/icon_search.png">
+            <div class="menu">
+                <input type="checkbox" id="hamburger-menu" />
+                <div class="hamburger">
+                <label for=hamburger-menu><i class="fas fa-bars"></i></label>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="exhibition.html">Exhibition</a></li>
+                        <li><a href="events.html" class="active">Events</a></li>
+                        <li><a href="visit.html">Visit</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
+                        <li><a href="book">Book</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <img src="images/icon_search.png">
+                </div>
             </div>
         </nav>
         <header>
-            <div class="homepage-cover"></div>
+            <div class="events-cover cover"></div>
         </header>
         <main>
-            <section class="homepage-content">
+            <section class="events-content image-width">
+                <div class="events-content-align">
+                    <img src="images/events_night.jpg" alt="Night in the museum "/>
+                    <h2>Night in the museum</h2>
+                    <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+                    <a href="#" class="cta">Read More</a>
+                </div>
+                <div class="events-content-align">
+                    <img src="images/events_professor.jpg" alt="Visiting professor of aeronautics"/>
+                    <h2>Visiting professor of aeronautics</h2>
+                    <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+                    <a href="#" class="cta">Read More</a>
+                </div>
+                <div class="events-content-align">
+                    <img src="images/events_energetica.jpg" alt="Energetica exhibition on loan"/>
+                    <h2>Energetica exhibition on loan</h2>
+                    <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
+                    <a href="#" class="cta">Read More</a>
+                </div>
             </section>
         </main>
         <footer>
@@ -39,7 +66,7 @@
             </div>
             <div>
                 <h2>Opening Hours</h2>
-                <ul>
+                <ul class="hours">
                     <li>Monday: Closed</li>
                     <li>Tuesday: 10:00-16:00</li>
                     <li>Wednesday: 10:00-16:00</li>

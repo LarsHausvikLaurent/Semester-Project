@@ -8,26 +8,35 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/97eed6eac3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="images/Logo.png" alt="logo"></a>
             </div>
-            <ul>
-                <li><a href="explore.html" class="active">Explore</a></li>
-                <li><a href="exhibition.html">Exhibition</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="getinvolved.html">Get Involved</a></li>
-                <li><a href="book">Book</a></li>
-            </ul>
-            <div class="search">
-                <img src="images/icon_search.png">
+            <div class="menu">
+                <input type="checkbox" id="hamburger-menu" />
+                <div class="hamburger">
+                <label for=hamburger-menu><i class="fas fa-bars"></i></label>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="exhibition.html">Exhibition</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="visit.html">Visit</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
+                        <li><a href="book">Book</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <img src="images/icon_search.png">
+                </div>
             </div>
         </nav>
         <header>
-            <div class="explore-kids-cover"></div>
+            <div class="explore-kids-cover cover"></div>
         </header>
         <main>
             <section class="explore-kids-content">
@@ -47,7 +56,7 @@
             </div>
             <div>
                 <h2>Opening Hours</h2>
-                <ul>
+                <ul class="hours">
                     <li>Monday: Closed</li>
                     <li>Tuesday: 10:00-16:00</li>
                     <li>Wednesday: 10:00-16:00</li>

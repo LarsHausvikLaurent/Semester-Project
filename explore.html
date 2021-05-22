@@ -9,48 +9,59 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/97eed6eac3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="images/Logo.png" alt="logo"></a>
             </div>
-            <ul>
-                <li><a href="explore.html" class="active">Explore</a></li>
-                <li><a href="exhibition.html">Exhibition</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="getinvolved.html">Get Involved</a></li>
-                <li><a href="book">Book</a></li>
-            </ul>
-            <div class="search">
-                <img src="images/icon_search.png">
+            <div class="menu">
+                <input type="checkbox" id="hamburger-menu" />
+                <div class="hamburger">
+                <label for=hamburger-menu><i class="fas fa-bars"></i></label>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="exhibition.html">Exhibition</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="visit.html">Visit</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
+                        <li><a href="book">Book</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <img src="images/icon_search.png">
+                </div>
             </div>
         </nav>
         <header>
-            <section class="explore-cover">
+            <section class="header-cover">
                 <h1>Explore</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non enim praesent elementum facilisis leo. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Viverra nam libero justo laoreet sit amet cursus sit amet. Elementum nisi quis eleifend quam. Ut consequat semper viverra nam libero.</p>
+                <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
+                <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
+                <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
             </section>
         </header>
         <main>
-            <section class="explore-content">
-                <div>
+            <section class="explore-content image-width img">
+                <div class="explore-content-align">
                     <img src="images/explore_kids.jpg" alt="Kids"/>
                     <h2>Kids</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non enim praesent elementum facilisis leo. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Viverra nam libero justo laoreet sit amet cursus sit amet. Elementum nisi quis eleifend quam. Ut consequat semper viverra nam libero.</p>
+                    <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
                     <a href="explore-kids.html" class="cta">Read More</a>
                 </div>
-                <div>
+                <div class="explore-content-align">
                     <img src="images/explore_teachers.jpg" alt="Teachers"/>
                     <h2>Teachers</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non enim praesent elementum facilisis leo. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Viverra nam libero justo laoreet sit amet cursus sit amet. Elementum nisi quis eleifend quam. Ut consequat semper viverra nam libero.</p>
+                    <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. </p>
                     <a href="explore-kids.html" class="cta">Read More</a>
                 </div>
-                <div>
+                <div class="explore-content-align">
                     <img src="images/explore_research.jpg" alt="Research"/>
                     <h2>Research</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non enim praesent elementum facilisis leo. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Viverra nam libero justo laoreet sit amet cursus sit amet. Elementum nisi quis eleifend quam. Ut consequat semper viverra nam libero.</p>
+                    <p>Are you looking to get involved with our team of researchers and academics? </p>
                     <a href="explore-kids.html" class="cta">Read More</a>
                 </div>
             </section>
@@ -61,7 +72,7 @@
             </div>
             <div>
                 <h2>Opening Hours</h2>
-                <ul>
+                <ul class="hours">
                     <li>Monday: Closed</li>
                     <li>Tuesday: 10:00-16:00</li>
                     <li>Wednesday: 10:00-16:00</li>
