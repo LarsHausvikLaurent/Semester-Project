@@ -45,7 +45,7 @@ main {
 }
 
 h1, h2, nav, .cta, .cta-contact, .cta-home {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
 }
@@ -60,7 +60,7 @@ h2, nav {
 }
 
 p, .hours, label {
-    font-family: 'lato', sans-serif;
+    font-family: 'lato', sans-serif, Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
