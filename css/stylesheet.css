@@ -1,3 +1,14 @@
+/* ----------------------- Variables  --------------------------*/
+:root {
+    --primary-blue: #00A9B7;
+    --secondary-blue: #005F86;
+    --active-red: #B70E00;
+    --background-gray: #707070;
+    --bakcground-white: #EFEFEF;
+    --text-black: #1C1D1D;
+}
+
+
 /* ----------------------- General --------------------------*/
 
 nav {grid-area: nav; }
@@ -15,9 +26,8 @@ body {
     'footer'
 }
 
-
 nav, footer, main {
-    background: #EFEFEF;
+    background: var(--bakcground-white);
     padding: 10px 100px;
 }
 
@@ -34,8 +44,7 @@ main {
     margin-bottom: 20px;
 }
 
-
-h1, h2, nav, .cta, .cta-contact {
+h1, h2, nav, .cta, .cta-contact, .cta-home {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
@@ -73,7 +82,6 @@ nav {
     align-items: center;
 }
 
-
 nav ul {
     padding:0mm;
     margin: 10px;
@@ -86,7 +94,7 @@ nav li {
 }
 
 nav a {
-    color: #1C1D1D;
+    color: var(--text-black);
 }
 
 a {
@@ -110,12 +118,12 @@ a {
 
 .search img {
     max-width: 25px;
+    cursor:pointer;
 }
 
 .logo img {
     max-width: 200px;
 }
-
 
 footer .logo {
     margin-top: 15px;
@@ -157,18 +165,32 @@ header {
     flex: 1;
     background-position-x: center;
     background-position-y: top center;
+    position: relative;
 }
+
+.cover-message {
+    position: absolute;
+    left: 100px;
+}
+
+.cover-message-white {
+    color: var(--bakcground-white);
+}
+
 
 /* --------------------------- Images --------------------------*/ 
 
 .image-width img {
     width: 100%;
+    cursor:pointer;
 }
+
 
  /* --------------------------- Home Page --------------------------*/ 
 
 .homepage-cover {
     background-image: url("../images/home_cover.jpg");
+    position: relative;
 }
 
 .grid-layout {
@@ -191,15 +213,11 @@ header {
     flex: 1;
 }
 
-
  /* --------------------------- Explore Kids Page --------------------------*/ 
 
 .explore-kids-cover {
     background-image: url("../images/explore_kids_cover.jpg");
 }
-
-/* --------------------------- Exhibition --------------------------*/ 
-
 
 /* --------------------------- Visit Page --------------------------*/
 
@@ -222,10 +240,6 @@ header {
     align-items: top;
     gap: 18px;
     margin-top: 10px;
-}
-
-.events-content-align {
-    flex: 1;
 }
 
 
@@ -259,11 +273,10 @@ header {
 
 .contact {
     flex: 1;
-    border: solid black 2px;
 }
 
 textarea, input {
-    border: 1px solid #707070c4;
+    border: 1px solid var(--background-gray);
     border-radius: 8px;
     margin: 0px 0px 20px;
     padding: 10px;
@@ -289,34 +302,78 @@ textarea, input {
 .cta, .cta-contact, .cta-home {
     font-size: 1.1em;
     color: white;
-    background-color: #B70E00;
+    background-color: var(--active-red);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
+
 .cta-contact {
     font-size: 1.3em;
-    background-color: #005F86;
+    background-color: var(--primary-blue);
     padding: 10px 30px;
     cursor:pointer;
 }
 
-.home {
-    position: relative;
-}
 
 .cta-home {
-        font-size: 1.1em;
-    color: white;
-    background-color: #B70E00;
-    padding: 5px 10px;
-    border-radius: 5px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    padding: 15px 40px;
 }
+
+.homepage-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.cta-readmore {
+    background-color: var(--primary-blue);
+}
+
+
+/* --------------------------- Animations --------------------------*/
+
+nav ul a:hover {
+    transition: 0.3s;
+    background-color: var(--primary-blue);
+    padding: 5px;
+    color: var(--bakcground-white);
+}
+
+.cta:hover, .cta-home:hover, .book:hover {
+    transition: 0.3s;
+    background-color: var(--bakcground-white);
+    border: 1px solid var(--active-red);
+    color: var(--active-red);
+}
+
+.cta-readmore:hover, .cta-contact:hover {
+    transition: 0.3s;
+    background-color: var(--bakcground-white);
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.image-popup img{
+    transition: 0.5s;
+}
+
+.image-popup img:hover {
+    transform: scale(1.02);
+}
+
+.book {
+    padding: 5px;
+    background-color: var(--active-red);
+    color: var(--bakcground-white);
+}
+
 
 /* --------------------------- Media Queries --------------------------*/
 
@@ -327,7 +384,11 @@ textarea, input {
     }
     
     .header-cover {
-        padding: 40px;
+        padding: 0px 40px;
+    }
+
+    .cover-message {
+        left: 40px;
     }
 
     .navigation {
@@ -350,7 +411,12 @@ textarea, input {
 
     .hamburger {
         display: block;
-        margin-right: 20px;
+        margin-left: 20px;
+        order: 3;
+    }
+
+    .cursor {
+        cursor:pointer;
     }
 
     footer {
@@ -377,7 +443,7 @@ textarea, input {
         
     }
 
-    footer, .events-content, .getinvolved-content {
+    .events-content, .getinvolved-content {
         flex-direction: column;
     }
 
@@ -392,9 +458,12 @@ textarea, input {
     .explore-content {
         flex-direction: column;
     }
+
     .explore-content-align {
         max-width: 500px;
+        margin-bottom: 15px;
     }
+
 
 }
 
@@ -416,4 +485,39 @@ textarea, input {
     .hamburger, #hamburger-menu {
         display: none;
     }
+
+}
+
+@media (min-width:600px) {
+
+    .overlay-image {
+        position: relative;
+    }
+    
+    .overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: var(--bakcground-white);
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    
+    .overlay-content:hover {
+        opacity: 1;
+    }
+    
+    .overlay-content p {
+        max-width: 400px;
+        text-align: center;
+    }
+
 }

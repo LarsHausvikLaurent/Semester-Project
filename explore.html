@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Science Community Museum | Home</title>
+        <title>Science Community Museum | Explore</title>
         <meta name="description" content="Science Museum"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="css/stylesheet.css" rel="stylesheet">
@@ -17,22 +17,22 @@
                 <a href="index.html"><img src="images/Logo.png" alt="logo"></a>
             </div>
             <div class="menu">
-                <input type="checkbox" id="hamburger-menu" />
+                <input type="checkbox" id="hamburger-menu">
                 <div class="hamburger">
-                <label for=hamburger-menu><i class="fas fa-bars"></i></label>
+                <label for=hamburger-menu class="cursor"><i class="fas fa-bars"></i></label>
                 </div>
                 <div class="navigation">
                     <ul>
-                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="explore.html" class="active">Explore</a></li>
                         <li><a href="exhibition.html">Exhibition</a></li>
                         <li><a href="events.html">Events</a></li>
                         <li><a href="visit.html">Visit</a></li>
                         <li><a href="getinvolved.html">Get Involved</a></li>
-                        <li><a href="book">Book</a></li>
+                        <li><a href="book" class="book">Book</a></li>
                     </ul>
                 </div>
                 <div class="search">
-                    <img src="images/icon_search.png">
+                    <img src="images/icon_search.png" alt="search">
                 </div>
             </div>
         </nav>
@@ -45,24 +45,36 @@
             </section>
         </header>
         <main>
-            <section class="explore-content image-width img">
+            <section class="explore-content image-width">
                 <div class="explore-content-align">
-                    <img src="images/explore_kids.jpg" alt="Kids"/>
-                    <h2>Kids</h2>
-                    <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
-                    <a href="explore-kids.html" class="cta">Read More</a>
+                    <div class="overlay-image">
+                        <a href="explore-kids.html"><img src="images/explore_kids.jpg" alt="Kids"/></a>
+                        <div class="overlay-content">
+                            <h2>Kids</h2>
+                            <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
+                            <a href="explore-kids.html" class="cta cta-readmore">Read More</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="explore-content-align">
-                    <img src="images/explore_teachers.jpg" alt="Teachers"/>
-                    <h2>Teachers</h2>
-                    <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. </p>
-                    <a href="explore-kids.html" class="cta">Read More</a>
+                    <div class="overlay-image">
+                        <a href="explore-kids.html"><img src="images/explore_teachers.jpg" alt="Teachers"/></a>
+                        <div class="overlay-content">
+                            <h2>Teachers</h2>
+                            <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. </p>
+                            <a href="explore-kids.html" class="cta cta-readmore">Read More</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="explore-content-align">
-                    <img src="images/explore_research.jpg" alt="Research"/>
-                    <h2>Research</h2>
-                    <p>Are you looking to get involved with our team of researchers and academics? </p>
-                    <a href="explore-kids.html" class="cta">Read More</a>
+                    <div class="overlay-image">
+                        <a href="explore-kids.html"><img src="images/explore_research.jpg" alt="Research"/></a>
+                        <div class="overlay-content">
+                            <h2>Research</h2>
+                            <p>Are you looking to get involved with our team of researchers and academics? </p>
+                            <a href="explore-kids.html" class="cta cta-readmore">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
