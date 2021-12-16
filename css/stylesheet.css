@@ -342,7 +342,7 @@ textarea, input {
 nav ul a:hover {
     transition: 0.3s;
     background-color: var(--primary-blue);
-    padding: 5px;
+    padding: auto;
     color: var(--bakcground-white);
 }
 
@@ -351,6 +351,7 @@ nav ul a:hover {
     background-color: var(--bakcground-white);
     border: 1px solid var(--active-red);
     color: var(--active-red);
+    padding: auto;
 }
 
 .cta-readmore:hover, .cta-contact:hover {
@@ -358,6 +359,17 @@ nav ul a:hover {
     background-color: var(--bakcground-white);
     border: 1px solid var(--primary-blue);
     color: var(--primary-blue);
+    padding: auto;
+}
+
+.image-popup h2 {
+    color: var(--text-black);
+    
+}
+
+.image-popup p {
+    color: var(--text-black);
+    font-size: 1.1rem;
 }
 
 .image-popup img{
@@ -460,7 +472,6 @@ nav ul a:hover {
     }
 
     .explore-content-align {
-        max-width: 500px;
         margin-bottom: 15px;
     }
 
